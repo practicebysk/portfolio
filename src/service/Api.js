@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const APIURL = process.env.API_URL;
+const APIURL = process.env.REACT_APP_API_URL;
 
 export const getData = async (endPoint) => {
   try {
