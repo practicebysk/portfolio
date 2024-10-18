@@ -39,6 +39,7 @@ function Page() {
   // const [portfolioDataList, setPortfolioDataList] = useState();
 
   async function activeTabFun(tab) {
+    setActiveTab(tab);
     if (tab === "portfolio") {
       const data = await getData("portfolioData");
       setPortfolioDataList(data);
@@ -46,7 +47,6 @@ function Page() {
       const data = await getData("testimonials");
       setTestimonialsDataList(data);
     }
-    setActiveTab(tab);
   }
 
   const clientList = [
