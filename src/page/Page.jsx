@@ -508,7 +508,7 @@ function Page() {
             </li>
           </ul> */}
 
-          <div className="filter-select-box">
+         {/* <div className="filter-select-box">
             <button className="filter-select" data-select>
               <div className="select-value" data-selecct-value>
                 Select category
@@ -517,7 +517,7 @@ function Page() {
               <div className="select-icon">
                 <ion-icon name="chevron-down"></ion-icon>
               </div>
-            </button>
+            </button> */}
 
             {/* <ul className="select-list">
               <li className="select-item">
@@ -536,9 +536,9 @@ function Page() {
                 <button data-select-item>Web development</button>
               </li>
             </ul> */}
-          </div>
+          {/* </div> */}
 
-          <ul className="project-list">
+          <ul className="project-list p-0">
             {portfolioDataList?.map((ele, index) => (
               <li className="project-item active" key={index}>
                 <Link to={ele.link} target="_blank">
