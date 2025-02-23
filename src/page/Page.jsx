@@ -15,6 +15,7 @@ import { FaEye } from "react-icons/fa";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import { getData } from "../service/Api";
+import { protfolioData } from "../db.ts";
 
 // client image
 // import
@@ -41,6 +42,8 @@ function Page() {
   async function activeTabFun(tab) {
     setActiveTab(tab);
     if (tab === "portfolio") {
+      const portfolioDataList = protfolioData;
+      setPortfolioDataList(portfolioDataList);
       const data = await getData("portfolioData");
       setPortfolioDataList(data);
     } else if (tab === "about") {

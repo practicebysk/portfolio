@@ -16,7 +16,7 @@ function SideBar() {
       <div className="sidebar-info">
         <figure className="avatar-box">
           <img
-          src="https://media.licdn.com/dms/image/D4D03AQF6a8iIz-APjA/profile-displayphoto-shrink_200_200/0/1711096124513?e=2147483647&v=beta&t=iJ4yH-uZSO281HbWULbMB-GCsZZDPJOyHshKkHqGBHc"
+          src="https://media.licdn.com/dms/image/v2/D4D03AQGdNn1vhnBiGA/profile-displayphoto-shrink_200_200/B4DZS4PeLuHIAY-/0/1738257852432?e=2147483647&v=beta&t=pQ6j7hhM5TGWtY_0z7UajG0pNhcgDWH-oLW4S3f1qNU"
             alt="kinar sardhara"
             width="80"
             className="rounded"
