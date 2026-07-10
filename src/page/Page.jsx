@@ -128,9 +128,8 @@ function Page() {
           </li>
           <li className="navbar-item">
             <button
-              className={`navbar-link ${
-                activeTab === "resume" ? "active" : ""
-              }`}
+              className={`navbar-link ${activeTab === "resume" ? "active" : ""
+                }`}
               onClick={() => activeTabFun("resume")}
             >
               Resume
@@ -138,9 +137,8 @@ function Page() {
           </li>
           <li className="navbar-item">
             <button
-              className={`navbar-link ${
-                activeTab === "portfolio" ? "active" : ""
-              }`}
+              className={`navbar-link ${activeTab === "portfolio" ? "active" : ""
+                }`}
               onClick={() => activeTabFun("portfolio")}
             >
               Portfolio
@@ -156,9 +154,8 @@ function Page() {
           </li> */}
           <li className="navbar-item">
             <button
-              className={`navbar-link ${
-                activeTab === "contact" ? "active" : ""
-              }`}
+              className={`navbar-link ${activeTab === "contact" ? "active" : ""
+                }`}
               onClick={() => activeTabFun("contact")}
             >
               Contact
@@ -350,28 +347,30 @@ function Page() {
 
           <ol className="timeline-list">
             <li className="timeline-item">
+              <h4 className="h4 timeline-item-title">Marwadi University</h4>
+
+              <span>2025-2027</span>
+
+              <p className="timeline-text">
+                Master’s graduate with advanced expertise in JavaScript
+                and modern web frameworks.
+                Skilled in agile development and collaborative
+                problem-solving, with a passion for learning and applying
+                emerging technologies.
+              </p>
+            </li>
+
+            <li className="timeline-item">
               <h4 className="h4 timeline-item-title">
                 Swarrnim Startup & Innovation University
               </h4>
 
-              <span>2022(running)</span>
+              <span>2022-2025</span>
 
               <p className="timeline-text">
                 Experienced JavaScript Developer adept in web frameworks.
                 Collaborative problem-solver with agile expertise. Dedicated to
                 learning and embracing emerging technologies.
-              </p>
-            </li>
-
-            <li className="timeline-item">
-              <h4 className="h4 timeline-item-title">Pioneer School</h4>
-
-              <span>2021-2022</span>
-
-              <p className="timeline-text">
-                Experience in Accountancy, Economics, Business Studies,
-                Mathematics, Computer Science and Entrepreneurship. Passionate
-                about leveraging knowledge for impactful solutions.
               </p>
             </li>
           </ol>
@@ -388,7 +387,7 @@ function Page() {
 
           <ol className="timeline-list">
             <li className="timeline-item">
-              <h4 className="h4 timeline-item-title">Front-End Developer</h4>
+              <h4 className="h4 timeline-item-title">Upqor Private Limited (Front-End Developer)</h4>
 
               <span>2024 — Present</span>
 
@@ -400,7 +399,7 @@ function Page() {
             </li>
 
             <li className="timeline-item">
-              <h4 className="h4 timeline-item-title">Front-End Developer</h4>
+              <h4 className="h4 timeline-item-title">Kautilyam (Front-End Developer)</h4>
 
               <span>2023 — 2024</span>
 
@@ -511,7 +510,7 @@ function Page() {
             </li>
           </ul> */}
 
-         {/* <div className="filter-select-box">
+          {/* <div className="filter-select-box">
             <button className="filter-select" data-select>
               <div className="select-value" data-selecct-value>
                 Select category
@@ -522,7 +521,7 @@ function Page() {
               </div>
             </button> */}
 
-            {/* <ul className="select-list">
+          {/* <ul className="select-list">
               <li className="select-item">
                 <button data-select-item>All</button>
               </li>
