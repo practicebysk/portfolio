@@ -47,7 +47,7 @@ function Page() {
       const data = await getData("portfolioData");
       setPortfolioDataList(data);
     } else if (tab === "about") {
-      const data = await getData("testimonials");
+      // const data = await getData("testimonials");
       // setTestimonialsDataList(data);
     }
   }
