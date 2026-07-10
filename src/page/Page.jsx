@@ -19,24 +19,24 @@ import { protfolioData } from "../db.ts";
 
 // client image
 // import
-const TestimonialItem = ({ avatarSrc, name, text }) => (
-  <div className="content-card" data-testimonials-item>
-    <figure className="testimonials-avatar-box">
-      <img src={avatarSrc} alt={name} width="60" data-testimonials-avatar />
-    </figure>
-    <h4 className="h4 testimonials-item-title" data-testimonials-title>
-      {name}
-    </h4>
-    <div className="testimonials-text" data-testimonials-text>
-      <p>{text}</p>
-    </div>
-  </div>
-);
+// const TestimonialItem = ({ avatarSrc, name, text }) => (
+//   <div className="content-card" data-testimonials-item>
+//     <figure className="testimonials-avatar-box">
+//       <img src={avatarSrc} alt={name} width="60" data-testimonials-avatar />
+//     </figure>
+//     <h4 className="h4 testimonials-item-title" data-testimonials-title>
+//       {name}
+//     </h4>
+//     <div className="testimonials-text" data-testimonials-text>
+//       <p>{text}</p>
+//     </div>
+//   </div>
+// );
 
 function Page() {
   const [activeTab, setActiveTab] = useState("about");
   const [portfolioDataList, setPortfolioDataList] = useState();
-  const [testimonialsDataList, setTestimonialsDataList] = useState();
+  // const [testimonialsDataList, setTestimonialsDataList] = useState();
   // const [portfolioDataList, setPortfolioDataList] = useState();
 
   async function activeTabFun(tab) {
@@ -48,27 +48,27 @@ function Page() {
       setPortfolioDataList(data);
     } else if (tab === "about") {
       const data = await getData("testimonials");
-      setTestimonialsDataList(data);
+      // setTestimonialsDataList(data);
     }
   }
 
-  const clientList = [
-    {
-      img: devIcon,
-    },
-    {
-      img: devIcon,
-    },
-    {
-      img: "./assets/images/logo-1-color.png",
-    },
-    {
-      img: "./assets/images/logo-1-color.png",
-    },
-    {
-      img: "./assets/images/logo-1-color.png",
-    },
-  ];
+  // const clientList = [
+  //   {
+  //     img: devIcon,
+  //   },
+  //   {
+  //     img: devIcon,
+  //   },
+  //   {
+  //     img: "./assets/images/logo-1-color.png",
+  //   },
+  //   {
+  //     img: "./assets/images/logo-1-color.png",
+  //   },
+  //   {
+  //     img: "./assets/images/logo-1-color.png",
+  //   },
+  // ];
 
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedTestimonial, setSelectedTestimonial] = useState(null);
